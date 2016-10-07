@@ -1,0 +1,8 @@
+[Unit]
+Description=Use Amazon Dash Button To Toggle Hue Light
+
+[Service]
+TimeoutSec=0
+EnvironmentFile=/home/pi/dash-hue/.env
+
+ExecStart=/usr/local/bin/node /home/pi/dash-hue/index.js
