@@ -6,3 +6,6 @@ TimeoutSec=0
 EnvironmentFile=/home/pi/dash-hue/.env
 
 ExecStart=/usr/local/bin/node /home/pi/dash-hue/index.js
+
+[Install]
+WantedBy=multi-user.target
